@@ -1,14 +1,29 @@
 package c_strategy;
 
+import java.util.Scanner;
+
 public class Disciplina {
 	
-	float p1;
-    float p2;
-    float media;
-    String situacao;
-    String nome;
+	public float p1;
+    public float p2;
+    private float media;
+	private String situacao;
     ICalcMedia calculo;
     IMudaSituacao ajuste;
+    
+    Scanner entrada = new Scanner(System.in);
+    
+    public void Notas() {
+		System.out.println("\nP1: ");
+		this.p1 = entrada.nextFloat();
+		System.out.println("P2: ");
+		this.p2 = entrada.nextFloat();
+	}
+    
+    public void Media() {
+    	System.out.printf("Sua media é: %d e você foi %s",
+    			this.media, this.situacao);
+    }
 
     public float getP1() {
         return p1;
@@ -34,14 +49,10 @@ public class Disciplina {
         this.situacao = situacao;
     }
 
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
+    public void setMedia(float media) {
+		this.media = media;
+	}
+    
     public float getMedia() {
         return media;
     }
