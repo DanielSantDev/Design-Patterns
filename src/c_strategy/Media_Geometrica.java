@@ -16,7 +16,7 @@ public class Media_Geometrica implements ICalcMedia,IMudaSituacao {
 	@Override
 	public void CalculaMedia(Disciplina d) {
 		// TODO Auto-generated method stub
-		//d.setMedia(Math.sqrt(d.getP1()+d.getP2()));
+		d.setMedia(Math.sqrt(d.getP1()+d.getP2()));
 	}
 	
 }
