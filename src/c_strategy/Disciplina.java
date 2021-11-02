@@ -6,7 +6,7 @@ public class Disciplina {
 	
 	public float p1;
     public float p2;
-    private float media;
+    private double media;
 	private String situacao;
     ICalcMedia calculo;
     IMudaSituacao ajuste;
@@ -49,11 +49,11 @@ public class Disciplina {
         this.situacao = situacao;
     }
 
-    public void setMedia(float media) {
-		this.media = media;
+    public void setMedia(double d) {
+		this.media = d;
 	}
     
-    public float getMedia() {
+    public double getMedia() {
         return media;
     }
 
