@@ -16,12 +16,12 @@ public class Disciplina {
     public void Notas() {
 		System.out.println("\nP1: ");
 		this.p1 = entrada.nextFloat();
-		System.out.println("P2: ");
+		System.out.println("\nP2: ");
 		this.p2 = entrada.nextFloat();
 	}
     
     public void Media() {
-    	System.out.printf("Sua media é: %d e você foi %s",
+    	System.out.printf("Sua media é: %.2f e você foi %s",
     			this.media, this.situacao);
     }
 

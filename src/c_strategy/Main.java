@@ -16,13 +16,19 @@ public class Main {
 		switch(num) {
 		case 1:
 			Media_Aritmetica A = new Media_Aritmetica();
+			d = new Disciplina(A,A);
+			d.Notas();
 			A.CalculaMedia(d);
 			A.MudaSituacao(d);
+			d.Media();
 			break;
 		case 2:
 			Media_Geometrica G = new Media_Geometrica();
+			d = new Disciplina(G,G);
+			d.Notas();
 			G.CalculaMedia(d);
 			G.MudaSituacao(d);
+			d.Media();
 			break;
 		default:
 			System.out.println("Tente novamente!");

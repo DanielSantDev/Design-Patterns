@@ -7,10 +7,13 @@ public class Media_Geometrica implements ICalcMedia,IMudaSituacao {
 	@Override
 	public void MudaSituacao(Disciplina d) {
 		// TODO Auto-generated method stub
-		if(d.getMedia() > 7)
+		if(d.getMedia() > 7) {
 			System.out.println("Aprovado!");
-		else
+			d.setSituacao("Aprovado!");
+		}else {
 			System.out.println("Reprovado!");
+			d.setSituacao("Reprovado!");
+		}
 	}
 
 	@Override
